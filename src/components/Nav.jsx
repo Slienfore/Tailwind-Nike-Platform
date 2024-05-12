@@ -1,5 +1,5 @@
 import { headerLogo } from "../assets/images";
-// import { hamburger } from "../assets/images/icons";
+import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 
 const Nav = () => {
@@ -10,7 +10,8 @@ const Nav = () => {
           <img width={130} height={29} src={headerLogo} alt="Logo" />
         </a>
 
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+        {/* 小屏幕隐藏 */}
+        <ul className="max-lg:hidden flex-1 flex justify-center items-center gap-16">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
@@ -22,6 +23,11 @@ const Nav = () => {
             </li>
           ))}
         </ul>
+
+        {/* 大屏幕隐藏, 小屏幕显示 */}
+        <div className="hidden max-lg:block">
+          <img width={25} height={25} src={hamburger} alt="Hamburger" />
+        </div>
       </nav>
     </header>
   );

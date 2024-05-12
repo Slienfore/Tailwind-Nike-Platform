@@ -4,6 +4,7 @@ import { navLinks } from "../constants";
 
 const Nav = () => {
   return (
+    // 使用 absolute 定位, 不占据位置
     <header className="padding-x py-8 absolute z-10 w-full">
       <nav className="flex justify-between items-center max-container">
         <a href="/">

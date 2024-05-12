@@ -3,6 +3,7 @@ import {
   PopularProducts,
   SuperQuality,
   Services,
+  SpecialOffer,
   CustomReviews,
   Subscribe,
   Footer,
@@ -28,6 +29,10 @@ const App = () => (
 
       <section className="padding padding-x py-10">
         <Services></Services>
+      </section>
+
+      <section className="padding">
+        <SpecialOffer></SpecialOffer>
       </section>
 
       <section className="bg-pale-blue padding">
